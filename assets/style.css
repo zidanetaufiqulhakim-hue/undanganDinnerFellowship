@@ -331,6 +331,7 @@ main {
   color: var(--ivory-soft);
 }
 .copy b { font-weight: 600; color: var(--gold-300); }
+.copy + .copy { margin-top: 1rem; }
 .greeting__name.is-long { font-size: clamp(24px, 4.4vw, 36px); line-height: 1.2; }
 .greeting__name.is-xlong { font-size: clamp(19px, 3.4vw, 28px); line-height: 1.25; }
 
