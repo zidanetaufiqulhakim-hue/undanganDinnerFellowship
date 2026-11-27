@@ -679,6 +679,11 @@ main {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .fade-in, .js .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+.rsvp-button{display:inline-block;padding:12px 24px;border:1px solid rgba(240,214,150,.65);border-radius:999px;background:linear-gradient(135deg,rgba(201,164,94,.2),rgba(201,164,94,.08));color:var(--gold-100);font-weight:500;line-height:1.5;text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.rsvp-button:hover,.rsvp-button:focus-visible{background:rgba(201,164,94,.3);border-color:var(--gold-300);transform:translateY(-1px)}
+.rsvp-button:focus-visible{outline:2px solid var(--gold-300);outline-offset:3px}
+.rsvp-contact{margin:10px 0 0;color:var(--ivory-soft);font-size:13px;opacity:.8}
 </style>
 </head>
 <body>
@@ -784,7 +789,8 @@ main {
       </div>
       <div class="event__body" style="text-align:center">
         <p class="copy">Mohon konfirmasi kehadiran sebelum 5 Desember 2026</p>
-        <p class="copy"><a href="https://wa.me/6281511159013">+62 815-1115-9013 [Aliyah]</a></p>
+        <p class="copy"><a class="rsvp-button" href="https://wa.me/6281511159013?text=Halo%20Aliyah%2C%20saya%20ingin%20mengonfirmasi%20kehadiran%20di%20Gala%20Dinner%20Fellowship%202026." target="_blank" rel="noopener noreferrer">Konfirmasi Kehadiran via WhatsApp</a></p>
+        <p class="rsvp-contact">Aliyah ? +62 815-1115-9013</p>
       </div>
     </section>
 

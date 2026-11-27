@@ -332,6 +332,25 @@ main {
 }
 .copy b { font-weight: 600; color: var(--gold-300); }
 .copy + .copy { margin-top: 1rem; }
+.rsvp-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid rgba(240, 214, 150, .65);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(201, 164, 94, .2), rgba(201, 164, 94, .08));
+  color: var(--gold-100);
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background .2s, border-color .2s, transform .2s;
+}
+.rsvp-button:hover, .rsvp-button:focus-visible {
+  background: rgba(201, 164, 94, .3);
+  border-color: var(--gold-300);
+  transform: translateY(-1px);
+}
+.rsvp-button:focus-visible { outline: 2px solid var(--gold-300); outline-offset: 3px; }
+.rsvp-contact { margin: 10px 0 0; color: var(--ivory-soft); font-size: 13px; opacity: .8; }
 .greeting__name.is-long { font-size: clamp(24px, 4.4vw, 36px); line-height: 1.2; }
 .greeting__name.is-xlong { font-size: clamp(19px, 3.4vw, 28px); line-height: 1.25; }
 
